@@ -26,7 +26,7 @@ gradle build
 ```
 ![terminal](https://user-images.githubusercontent.com/67074676/106300045-bd60ef00-6234-11eb-8b48-1223cebf9787.JPG)
 
-Com o comando executado bastar ir na classe main do projeto e executar o projeto, assim que startado o serviço do spring boot ficará online 
+Com o comando executado bastar ir na classe main e executar o projeto, assim que startado o serviço do spring boot ficará online 
 
 ![tempsnip](https://user-images.githubusercontent.com/67074676/106299450-edf45900-6233-11eb-88a9-47240f1d67ab.png)
 
