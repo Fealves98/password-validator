@@ -7,7 +7,6 @@ import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-import javax.validation.Valid;
 
 import static org.springframework.http.HttpStatus.OK;
 
@@ -23,7 +22,7 @@ public class PasswordValidationController {
     @PostMapping
     @ResponseStatus(OK)
     @ApiOperation("Password validation")
-    public PasswordResponse validate(@Valid @RequestBody PasswordRequest request) {
+    public PasswordResponse validate(@RequestBody PasswordRequest request) {
         log.info("m=validate, request={}", request);
         return this.service.checkPassword(request);
     }
