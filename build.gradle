@@ -2,6 +2,8 @@ plugins {
     id 'org.springframework.boot' version '2.3.4.RELEASE'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+    id 'jacoco'
+
 }
 
 group = 'com.itau'
@@ -48,4 +50,37 @@ dependencyManagement {
 
 test {
     useJUnitPlatform()
+    finalizedBy jacocoTestCoverageVerification
+
+}
+
+jacocoTestReport {
+    reports {
+        html.enabled = true
+    }
+    dependsOn test
+}
+jacoco {
+    toolVersion = "0.8.3"
+    reportsDir = file("/$buildDir/jacoco")
+    jacocoTestReport {
+        reports {
+            html.enabled = true
+        }
+        dependsOn test
+    }
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            element = "BUNDLE"
+            limit {
+                counter = 'INSTRUCTION'
+                value = 'COVEREDRATIO'
+                minimum = 0.95
+            }
+            includes = ["**/service/**", "**/controller/**"]
+        }
+    }
 }
