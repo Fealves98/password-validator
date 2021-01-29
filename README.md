@@ -11,5 +11,40 @@ API de validação de senha, considerando validas Nove ou mais caracteres, Ao me
 | Swagger | 2.9.2 |
 | Jacoco | Latest |
 
+# Configurações padrões 
+
+- `Cobertura de testes: 95%`
+- `Porta padrão: 8080`
+
 
 # Como executar a aplicação localmente ?
+
+Na raiz do projeto execultar o comando abaixo para que o projeto seja buildado e os testes sejam executados,  
+```
+gradle build
+```
+Com o comando executado bastar ir na classe main do projeto e executar o projeto, assim que startado o serviço do springboot ficará online 
+
+# IMG
+
+# Requisições da API 
+
+Com a aplicação online, podemos realizar requisições na API, para que seja mais produtivo realizei a configuração do Swagger para documentar a API, Abaixo endereço padrão do Swagger 
+
+(http://localhost:8080/swagger-ui.html#/)
+
+Abaixo url para Consumo ou teste no postman 
+
+```
+http://localhost:8080/password-validation
+```
+Exemplo de Request da requisição
+
+```
+{
+  "password": "string"
+}
+```
+
+
+
