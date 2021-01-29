@@ -1,4 +1,4 @@
-# password validator
+# Password validator
 API de validação de senha, considerando validas Nove ou mais caracteres, Ao menos 1 dígito, Ao menos 1 letra minúscula, Ao menos 1 letra maiúscula, Ao menos 1 caractere especial, Considerando como especial os seguintes caracteres: !@#$%^&*()-+, Não possuir caracteres repetidos dentro do conjunto, Com um metodo POST para validação 
 
 # Stack
@@ -25,7 +25,8 @@ gradle build
 ```
 Com o comando executado bastar ir na classe main do projeto e executar o projeto, assim que startado o serviço do springboot ficará online 
 
-# IMG
+![tempsnip](https://user-images.githubusercontent.com/67074676/106299450-edf45900-6233-11eb-88a9-47240f1d67ab.png)
+
 
 # Requisições da API 
 
