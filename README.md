@@ -70,3 +70,5 @@ Como a necessidade do projeto era retornar apenas um boolean então decidi criar
 Como a requisição sempre é feita com sucesso independente da senha ser verdadeira ou falsa optei por sempre retornar 200OK, O jacoco é uma ferramenta ótima para garantir a qualidade do projeto conseguindo medir minha cobertura de testes e gerando relatórios assim é possível saber que o projeto será aprovado na esteira devOps
 
 Docker File - optei por não configurar e instruir o usuário a executar a aplicação usando o docker, assim o usuário não tem a dependência de instalar ferramentas para executar o projeto 
+
+Em um projeto maior conteriam algumas outras pastas na estrutura do projeto, nesse projeto em especifico criei apenas oque juguei necessário para garantir o funcionamento do projeto 
