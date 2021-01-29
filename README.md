@@ -39,6 +39,8 @@ Abaixo url para Consumo ou teste no postman
 ```
 http://localhost:8080/password-validation
 ```
+![Capturar](https://user-images.githubusercontent.com/67074676/106299770-5b07ee80-6234-11eb-8a4f-5e5cdcb4e638.JPG)
+
 Exemplo de Request
 
 ```
