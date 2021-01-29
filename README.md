@@ -36,6 +36,7 @@ Com o comando executado bastar ir na classe main do projeto e executar o projeto
 Com a aplicação online, podemos realizar requisições na API, para que seja mais produtivo realizei a configuração do Swagger para documentar a API, Abaixo endereço padrão do Swagger 
 
 (http://localhost:8080/swagger-ui.html#/)
+
 ![Capturar](https://user-images.githubusercontent.com/67074676/106299770-5b07ee80-6234-11eb-8a4f-5e5cdcb4e638.JPG)
 
 Abaixo url para Consumo ou teste no postman 
