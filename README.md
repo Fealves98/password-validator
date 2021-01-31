@@ -53,7 +53,7 @@ Exemplo de Request
 }
 ```
 
-# Detalhe sobre a solução
+# Detalhes sobre a solução
 A ideia do projeto é uma API de validação de senhas onde o usuário informa a senha e o sistema retorna se a senha é valida ou inválida, para que a solicitação fosse atendida precisei criar 2 métodos, um onde checa se é verdadeiro ou falso, e outra para ver se a senha segue os padrões, eu preferi deixar cada método com sua responsabilidade até por uma questão de reaproveitamento de código no futuro com o surgimento de uma nova demanda em cima da solução, para o validador criei uma Função regex para atender os requisitos, Ao menos 1 dígito, Ao menos 1 letra minúscula, Ao menos 1 letra maiúscula, Ao menos 1 caractere especial, Considerando como especial os seguintes caracteres: !@#$%^&*()-+, e para Não possuir caracteres repetidos dentro do conjunto criei uma logica em Java. 
 
 Como a necessidade do projeto era retornar apenas um boolean então decidi criar essa logicas em uma service, Mas em outra solução onde o usuário necessitasse de algo mais detalhado, eu criaria no request um @Pattern com os regex para validação e mensagem de falha, criaria um advice para interceptar tudo que o usuário informou errado, exemplo de json abaixo 
