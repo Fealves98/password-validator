@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 public class PasswordValidationService {
 
     public PasswordResponse checkPassword(PasswordRequest request) {
-        log.info("m=validate, request={}", request);
+        log.info("m=checkPassword, request={}", request);
         final var check = this.validate(request);
         var response = new PasswordResponse(check);
         return response;
@@ -20,7 +20,7 @@ public class PasswordValidationService {
 
     public boolean validate(PasswordRequest request) {
         //checks if the password matches the standards
-        log.info("m=checkOrders, request={}", request);
+        log.info("m=validate, request={}", request);
         var pattern = "^(?=.*[0-9])(?=.*[a-z]{2})(?=.*[A-Z])(?=.*[!@#$%^&*()-+])(?=\\S+$).{8,}$";
         boolean matches = Pattern.matches(pattern, request.getPassword());
 
