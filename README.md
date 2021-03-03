@@ -1,5 +1,5 @@
 # Password validator
-API de validação de senha, considerando validas Nove ou mais caracteres, Ao menos 1 dígito, Ao menos 1 letra minúscula, Ao  menos 1 letra maiúscula, Ao menos 1 caractere especial, Considerando como especial os seguintes caracteres: !@#$%^&*()-+, Não possuir caracteres repetidos dentro do conjunto, Com um método POST para validação
+API de validação de senha, considerando validas Nove ou mais caracteres, Ao menos 1 dígito, Ao menos 1 letra minúscula, Ao menos 1 letra maiúscula, Ao menos 1 caractere especial, Considerando como especial os seguintes caracteres: !@#$%^&*()-+, Não possuir caracteres repetidos dentro do conjunto, Com um método POST para validação
 
 # Stack
 
